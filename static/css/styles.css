@@ -1,0 +1,107 @@
+/* Фон для сторінки */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Mulish', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Центруємо контент і задаємо йому відступи */
+.container-custom {
+    max-width: 1720px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto; /* Центруємо */
+}
+
+/* Навбар */
+.custom-navbar {
+    background-color: #f4f4f4; /* Залишаємо фон */
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Контейнер для навбару */
+.custom-navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Колір тексту навігації */
+.custom-navbar .nav-link {
+    transition: color 0.3s ease-in-out;
+    margin-left: 5px;
+}
+
+/* Колір при наведенні */
+.custom-navbar .nav-link:hover {
+    color: #007bff;
+}
+
+/* Логотип */
+.custom-navbar .navbar-brand img {
+    height: 40px;
+}
+
+/* Фікс для мобільного меню */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #f4f4f4; /* Фон меню на мобільному */
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(30%); /* Зробити іконку видимою */
+    }
+}
+
+
+
+/* Root variable for colors */
+:root {
+    --Blue: #4138EA;
+}
+
+/* Navbar text styles */
+.custom-navbar .nav-link {
+    color: var(--Blue, #4138EA);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #2C28C7; /* Slightly darker blue for hover */
+}
+
+
+
+
+
+
+
+
+
+
+

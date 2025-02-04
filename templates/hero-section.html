@@ -1,0 +1,24 @@
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/hero.css' %}">
+{% endblock %}
+
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">Міжнародна IT-освіта для дітей та дорослих</h1>
+        <p class="hero-description">
+            Курси програмування, англійської мови і веб-дизайну сертифіковані і розроблені 
+            за європейськими стандартами освіти. 
+        </p>
+        <button class="hero-button">Перше заняття</button>
+    </div>
+
+    <!-- Animated Image Container -->
+    <div class="hero-animation">
+        <img src="{% static 'img/Gif1.gif' %}" alt="Animated Image" class="animation-image">
+        <div class="small-images">
+            <img src="{% static 'img/frame1.png' %}" alt="Small Image 1" class="small-img">
+            <img src="{% static 'img/frame2.png' %}" alt="Small Image 2" class="small-img">
+        </div>
+    </div>
+</div>

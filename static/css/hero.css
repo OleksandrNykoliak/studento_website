@@ -1,0 +1,161 @@
+
+:root {
+    --Blue: #4138EA;
+    --Green: #D1F054;
+    --White: #FFFFFF;
+}
+
+/* Hero Section Styles */
+.hero-section { 
+    background: var(--Blue);
+    border-radius: 51px;
+    padding: 40px;
+    text-align: center;
+    color: var(--White);
+    position: relative;
+    max-width: 1720px;
+    margin: 40px auto;
+    min-height: 706px; /* Instead of fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Title Style */
+.hero-title {
+    color: var(--Green, #D1F054);
+    z-index: 3;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 150%; 
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 1200px;
+    
+}
+
+/* Description Style */
+.hero-description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 600px;
+}
+
+/* Button Style */
+.hero-button {
+    background: var(--Green);
+    color: var(--Blue);
+    border: none;
+    border-radius: 39px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #b8d746;
+}
+
+/* Animation Container */
+.hero-animation {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Animation Image */
+.animation-image {
+    max-width: 550px;
+    border-radius: 20px;
+}
+
+/* Small Images */
+.small-images {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    display: flex;
+    gap: 10px;
+}
+
+.small-img {
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 20px;
+        height: auto; /* Allow content to adjust dynamically */
+    }
+
+    .hero-title {
+        font-size: 24px;
+        text-align: center;
+        z-index: 3; 
+    }
+
+    .hero-description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .hero-animation {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        text-align: center;
+    }
+
+    .animation-image {
+        max-width: 100%;
+    }
+
+    .small-images {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
